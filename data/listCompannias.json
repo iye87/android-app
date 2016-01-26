@@ -1,0 +1,23 @@
+[
+   {
+	 "id": "1",
+	 "titulo": "Compañia 1",
+	 "desccorta": "Descripción corta de Compañia 1",
+	 "desclarga": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+	 "activo": false
+	},
+	{
+	 "id": "2",
+	 "titulo": "Compañia 2",
+	 "desccorta": "Descripción corta de Compañia 2",
+	 "desclarga": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
+	 "activo": false
+	},
+	{
+	 "id": "3",
+	 "titulo": "Compañia 3",
+	 "desccorta": "Descripción corta de Compañia 3",
+	 "desclarga": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+	 "activo": false
+	}
+]

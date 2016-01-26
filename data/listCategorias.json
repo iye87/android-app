@@ -1,0 +1,23 @@
+[
+   {
+	 "id": "1",
+	 "titulo": "Categoria 1",
+	 "desccorta": "Descripción corta de Categoria 1",
+	 "desclarga": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+	 "activo": false
+	},
+	{
+	 "id": "2",
+	 "titulo": "Categoria 2",
+	 "desccorta": "Descripción corta de Categoria 2",
+	 "desclarga": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+	 "activo": false
+	},
+	{
+	 "id": "3",
+	 "titulo": "Categoria 3",
+	 "desccorta": "Descripción corta de Categoria 3",
+	 "desclarga": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+	 "activo": false
+	}
+]

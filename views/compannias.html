@@ -1,0 +1,14 @@
+<header class="bar bar-nav">
+  <a class="icon icon-left pull-left" href="#/conf"></a>
+  <h1 class="title">Configurar Compañias</h1>
+</header>
+
+<div class="content">
+
+  <ul class="table-view">
+    <li ng-repeat='compannia in compannias' ng-init="id=$index"; class="table-view-cell">
+        {{compannia.titulo}}
+        <span class="badge"><input type="checkbox" id="inlineCheckbox.{{id}}" value="option.{{id}}"></span>
+    </li>
+  </ul>
+</div>

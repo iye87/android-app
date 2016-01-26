@@ -1,0 +1,29 @@
+[
+   {
+	 "id": "1",
+	 "id_compannia" : "1",
+	 "id_categoria" : "1",
+	 "titulo": "Oferta Cat 1 Compañia 1",
+	 "desccorta": "Descripción corta de Oferta 1",
+	 "desclarga": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+	 "activo": false
+	},
+	{
+	 "id": "2",
+	 "id_compannia" : "1",
+	 "id_categoria" : "2",
+	 "titulo": "Oferta Cat 1 Compañia 1",
+	 "desccorta": "Descripción corta de Oferta 2",
+	 "desclarga": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
+	 "activo": false
+	},
+	{
+	 "id": "3",
+	 "id_compannia" : "2",
+	 "id_categoria" : "1",
+	 "titulo": "Oferta Cat 1 Compañia 2",
+	 "desccorta": "Descripción corta de Oferta 3",
+	 "desclarga": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+	 "activo": false
+	}
+]
