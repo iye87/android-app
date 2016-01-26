@@ -1,0 +1,15 @@
+<header class="bar bar-nav">
+  <a class="icon icon-left pull-left" href="#/conf"></a>
+  <h1 class="title">Configurar Categorias</h1>
+</header>
+
+<div class="content">
+
+  <ul class="table-view">
+    <li ng-repeat='categoria in categorias' ng-init="id=$index"; class="table-view-cell">
+        {{categoria.titulo}}
+        <span class="badge"><input type="checkbox" ng-model="activo" ng-checked="categoria.activo" ng-change="addActivo(categoria.id)"> </span>
+    </li>
+  </ul>
+
+</div>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.ahv.shop" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Ofertas</name>
+    <description>
+        Ofertas Online
+    </description>
+    <author email="asielhv@gmail.com" href="https://plus.google.com/u/0/+AsielHern%C3%A1ndezValdes">
+        Isidro Martinez Suarez
+    </author>
+    <content src="index.html" />
+    <!--Plugins q permite abrir ventanas window estilo window.open()-->
+    <plugin name="com.stevenpartridge.inappbrowser" spec="1.4" source="pgb" />
+    <!--Plugins de IOS para no mostrar la app por encima de la barra de notificacion-->
+    <gap:plugin name="com.phonegap.plugin.statusbar" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+
+    <icon src="icon.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="screen.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="screen.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="screen.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="screen.png" />
+    <gap:splash gap:platform="ios" height="480" src="screen.png" width="320" />
+    <gap:splash gap:platform="ios" height="960" src="screen.png" width="640" />
+    <gap:splash gap:platform="ios" height="1136" src="screen.png" width="640" />
+    <gap:splash gap:platform="ios" height="1024" src="screen.png" width="768" />
+    <gap:splash gap:platform="ios" height="768" src="screen.png" width="1024" />
+    <gap:splash gap:platform="winphone" src="screen.png" />
+    <access origin="*" />
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <allow-navigation href="*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>
