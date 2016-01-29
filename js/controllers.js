@@ -133,13 +133,16 @@ angular.module('app.controllers', [])
 .controller('OfertaCtrl', function($scope, $http) {
     $http.get('data/listOfertas.json').success(function(data) {
         localStorage.setItem('oferta-ratchet2', JSON.stringify(data));
+
         var oferta = data;
         var ofertas_categoria=[];
         var ofertas_activas=[];
         var ofertas_compannias=[];
 
 	//Selecciono de la lista de categoria las que estan activas
+	if (localStorage.getItem('categoria-ratchet2')) {
         var categorias = JSON.parse(localStorage.getItem('categoria-ratchet2'));
+    }
         var cat_activas=[];
         for (var i = 0; i < categorias.length; i++) {
         	if (categorias[i].activo==true){
@@ -188,7 +191,6 @@ angular.module('app.controllers', [])
         	$scope.ofertas=ofertas_activas;
         }
         
-
     });
 })
 .controller('AddtareaCtrl', function($scope,$http) {

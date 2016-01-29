@@ -6,10 +6,12 @@
 	<ul class="table-view">
   <li class="table-view-cell media" ng-repeat='oferta in ofertas' ng-init="id=$index">
     <a class="navigate-right">
-      <img class="media-object pull-left" src="">
+      <img class="media-object pull-left" src="{{oferta.imagen}}" style="width: 50px; height: 50px;">
       <div class="media-body">
         {{oferta.titulo}}
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+        <p  align="justify">Se muestra una descripcion pequeña de la oferta...
+        Para mayor información dirigirse al sitio web</p>
+        <button class="btn btn-outlined btn-primary"" style="float:right;" ng-click=""><span class="icon icon-right"></span></button>
       </div>
     </a>
   </li>
