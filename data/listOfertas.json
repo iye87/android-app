@@ -5,7 +5,7 @@
 	 "id_categoria" : "1",
 	 "titulo": "Oferta Cat 1 Compañia 1",
 	 "desccorta": "Descripción corta de Oferta 1",
-	 "desclarga": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	 "imagen": "imagen/oferta_imagen.png"
 	},
 	{
 	 "id": "2",
@@ -13,7 +13,7 @@
 	 "id_categoria" : "2",
 	 "titulo": "Oferta Cat 2 Compañia 1",
 	 "desccorta": "Descripción corta de Oferta 2",
-	 "desclarga": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+	 "imagen": "imagen/oferta_uno_imagen.png"
 	},
 	{
 	 "id": "3",
@@ -21,6 +21,6 @@
 	 "id_categoria" : "1",
 	 "titulo": "Oferta Cat 1 Compañia 2",
 	 "desccorta": "Descripción corta de Oferta 3",
-	 "desclarga": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	 "imagen": "imagen/oferta_mes.png"
 	}
 ]

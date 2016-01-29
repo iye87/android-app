@@ -6,7 +6,7 @@
 
   <ul class="table-view">
     <li ng-repeat='compannia in compannias' ng-init="id=$index"; class="table-view-cell">
-        {{compannia.titulo}}
+        {{compannia.nombre}}
         <span class="badge"><input type="checkbox" ng-model="activo" ng-checked="compannia.activo" ng-change="addActivo(compannia.id)"></span>
     </li>
   </ul>

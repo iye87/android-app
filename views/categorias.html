@@ -7,7 +7,7 @@
 
   <ul class="table-view">
     <li ng-repeat='categoria in categorias' ng-init="id=$index"; class="table-view-cell">
-        {{categoria.titulo}}
+        {{categoria.nombre}}
         <span class="badge"><input type="checkbox" ng-model="activo" ng-checked="categoria.activo" ng-change="addActivo(categoria.id)"> </span>
     </li>
   </ul>

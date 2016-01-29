@@ -10,6 +10,9 @@
     <content src="index.html" />
     <!--Plugins q permite abrir ventanas window estilo window.open()-->
     <plugin name="com.stevenpartridge.inappbrowser" spec="1.4" source="pgb" />
+	<feature name="PushPlugin">
+	  <param name="android-package" value="com.plugin.gcm.PushPlugin" />
+	</feature>
     <!--Plugins de IOS para no mostrar la app por encima de la barra de notificacion-->
     <gap:plugin name="com.phonegap.plugin.statusbar" />
     <preference name="StatusBarOverlaysWebView" value="false" />

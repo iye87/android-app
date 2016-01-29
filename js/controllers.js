@@ -12,10 +12,9 @@ angular.module('app.controllers', [])
 })
 .controller('CategoriaCtrl', function($scope, $http) {
 
-	if (localStorage.getItem('categoria-ratchet2')) {
-		
+	if (localStorage.getItem('categoria-ratchet2')) {		
 
-		$http.get('data/listCategorias.json').success(function(data) {
+		$http.get('http://localhost/all_categoria').success(function(data) {
 	            //localStorage.setItem('categoria-ratchet2', JSON.stringify(data));
 	            var categorias2 = data;
 	            var categorias = JSON.parse(localStorage.getItem('categoria-ratchet2'));
@@ -25,8 +24,8 @@ angular.module('app.controllers', [])
 				 localStorage.setItem('categoria-ratchet2', JSON.stringify(data));} 
 			});
 	}
-	else{
-		$http.get('data/listCategorias.json').success(function(data) {
+	else{//data/listCategorias.json
+		$http.get('http://localhost/all_categoria').success(function(data) {
         localStorage.setItem('categoria-ratchet2', JSON.stringify(data));
         $scope.categorias = data;
     });
@@ -50,9 +49,8 @@ angular.module('app.controllers', [])
 		aux.splice(index,1);
 		var aux1 = {
 			'id': id,
-			'titulo': categorias[index].titulo,
-			'desccorta': categorias[index].desccorta,
-			'desclarga': categorias[index].desclarga,
+			'nombre': categorias[index].nombre,
+			'ruta_foto': categorias[index].ruta_foto,
 			'activo': activo
 		};
         aux.push(aux1);
@@ -75,8 +73,8 @@ angular.module('app.controllers', [])
 
 		if (localStorage.getItem('compannia-ratchet2')) {	
 
-		$http.get('data/listCompannias.json').success(function(data) {
-
+		$http.get('http://localhost/all_compannia').success(function(data) {
+				//localStorage.setItem('compannia-ratchet2', JSON.stringify(data));
 	            var compannias2 = data;
 	            var compannias = JSON.parse(localStorage.getItem('compannia-ratchet2'));
 
@@ -85,7 +83,7 @@ angular.module('app.controllers', [])
 				 localStorage.setItem('compannia-ratchet2', JSON.stringify(data));} 
 			});
 	}else{
-		$http.get('data/listCompannias.json').success(function(data) {
+		$http.get('http://localhost/all_compannia').success(function(data) {
         localStorage.setItem('compannia-ratchet2', JSON.stringify(data));
         $scope.compannias = data;
     });
@@ -109,9 +107,8 @@ angular.module('app.controllers', [])
 		aux.splice(index,1);
 		var aux1 = {
 			'id': id,
-			'titulo': compannias[index].titulo,
-			'desccorta': compannias[index].desccorta,
-			'desclarga': compannias[index].desclarga,
+			'nombre': compannias[index].nombre,
+			'industria': compannias[index].industria,
 			'activo': activo
 		};
         aux.push(aux1);
@@ -133,13 +130,16 @@ angular.module('app.controllers', [])
 .controller('OfertaCtrl', function($scope, $http) {
     $http.get('data/listOfertas.json').success(function(data) {
         localStorage.setItem('oferta-ratchet2', JSON.stringify(data));
+
         var oferta = data;
         var ofertas_categoria=[];
         var ofertas_activas=[];
         var ofertas_compannias=[];
 
 	//Selecciono de la lista de categoria las que estan activas
+	if (localStorage.getItem('categoria-ratchet2')) {
         var categorias = JSON.parse(localStorage.getItem('categoria-ratchet2'));
+    }
         var cat_activas=[];
         for (var i = 0; i < categorias.length; i++) {
         	if (categorias[i].activo==true){
@@ -188,7 +188,6 @@ angular.module('app.controllers', [])
         	$scope.ofertas=ofertas_activas;
         }
         
-
     });
 })
 .controller('AddtareaCtrl', function($scope,$http) {

@@ -40,21 +40,49 @@ angular.module('app',['ui.router','app.controllers'])
     	templateUrl: 'views/conf.html'
       });
   $urlRouterProvider.otherwise('/ofertas');
+}).run(function($cordovaPush) {
+
+  var androidConfig = {
+    "senderID": "826292561900",
+  };
+
+  document.addEventListener("deviceready", function(){
+    $cordovaPush.register(androidConfig).then(function(result) {
+      // Success
+    }, function(err) {
+      // Error
+    })
+
+    $rootScope.$on('$cordovaPush:notificationReceived', function(event, notification) {
+      switch(notification.event) {
+        case 'registered':
+          if (notification.regid.length > 0 ) {
+            alert('registration ID = ' + notification.regid);
+          }
+          break;
+
+        case 'message':
+          // this is the actual push notification. its format depends on the data model from the push server
+          alert('message = ' + notification.message + ' msgCount = ' + notification.msgcnt);
+          break;
+
+        case 'error':
+          alert('GCM error = ' + notification.msg);
+          break;
+
+        default:
+          alert('An unknown GCM event has occurred');
+          break;
+      }
+    });
+
+
+    // WARNING: dangerous to unregister (results in loss of tokenID)
+    $cordovaPush.unregister(options).then(function(result) {
+      // Success!
+    }, function(err) {
+      // Error
+    })
+
+  }, false);
 });
-
-
-
-///////////Funciones para guardar y recuperar los datos/////////////
-//Todo basado en llave valor
-function saveData(key,value){
-    value=JSON.stringify(value);
-    localStorage.setItem(key,value);
-}
-function getData(key){
-   return JSON.parse(localStorage.getItem(key));
-}
-
-function deleteData(key){
-   localStorage.removeItem(key);
-}
-/////////////////////////////////////////////////////////////////////
