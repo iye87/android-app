@@ -6,7 +6,11 @@
 
   <ul class="table-view">
     <li ng-repeat='compannia in compannias' ng-init="id=$index"; class="table-view-cell">
+<<<<<<< HEAD
         {{compannia.nombre}}
+=======
+        {{compannia.titulo}}
+>>>>>>> bd1b27c6eb73bad3a5c0631121a8d3f04287cb0e
         <span class="badge"><input type="checkbox" ng-model="activo" ng-checked="compannia.activo" ng-change="addActivo(compannia.id)"></span>
     </li>
   </ul>

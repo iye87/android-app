@@ -1,20 +1,38 @@
 [
    {
 	 "id": "1",
+<<<<<<< HEAD
 	 "nombre": "Compañia 1",
 	 "industria": "Descripción corta de Compañia 1",
+=======
+	 "titulo": "Compañia 1",
+	 "desccorta": "Descripción corta de Compañia 1",
+	 "desclarga": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+>>>>>>> bd1b27c6eb73bad3a5c0631121a8d3f04287cb0e
 	 "activo":false
 	},
 	{
 	 "id": "2",
+<<<<<<< HEAD
 	 "nombre": "Compañia 2",
 	 "industria": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+=======
+	 "titulo": "Compañia 2",
+	 "desccorta": "Descripción corta de Compañia 2",
+	 "desclarga": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+>>>>>>> bd1b27c6eb73bad3a5c0631121a8d3f04287cb0e
 	 "activo":false
 	},
 	{
 	 "id": "3",
+<<<<<<< HEAD
 	 "nombre": "Compañia 3",
 	 "industria": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+=======
+	 "titulo": "Compañia 3",
+	 "desccorta": "Descripción corta de Compañia 3",
+	 "desclarga": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+>>>>>>> bd1b27c6eb73bad3a5c0631121a8d3f04287cb0e
 	 "activo":false
 	}
 ]

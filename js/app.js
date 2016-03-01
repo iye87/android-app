@@ -40,6 +40,7 @@ angular.module('app',['ui.router','app.controllers'])
     	templateUrl: 'views/conf.html'
       });
   $urlRouterProvider.otherwise('/ofertas');
+<<<<<<< HEAD
 }).run(function($cordovaPush) {
 
   var androidConfig = {
@@ -69,6 +70,9 @@ angular.module('app',['ui.router','app.controllers'])
         case 'error':
           alert('GCM error = ' + notification.msg);
           break;
+=======
+});
+>>>>>>> bd1b27c6eb73bad3a5c0631121a8d3f04287cb0e
 
         default:
           alert('An unknown GCM event has occurred');
@@ -84,5 +88,12 @@ angular.module('app',['ui.router','app.controllers'])
       // Error
     })
 
+<<<<<<< HEAD
   }, false);
 });
+=======
+function deleteData(key){
+   localStorage.removeItem(key);
+}
+/////////////////////////////////////////////////////////////////////
+>>>>>>> bd1b27c6eb73bad3a5c0631121a8d3f04287cb0e

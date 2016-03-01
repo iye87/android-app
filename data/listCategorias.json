@@ -1,20 +1,38 @@
 [
    {
 	 "id": "1",
+<<<<<<< HEAD
 	 "nombre": "Categoria 1",
 	 "ruta_foto": "Descripción corta de Categoria 1",
+=======
+	 "titulo": "Categoria 1",
+	 "desccorta": "Descripción corta de Categoria 1",
+	 "desclarga": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+>>>>>>> bd1b27c6eb73bad3a5c0631121a8d3f04287cb0e
 	 "activo":false
 	},
 	{
 	 "id": "2",
+<<<<<<< HEAD
 	 "nombre": "Categoria 2",
 	 "ruta_foto": "Descripción corta de Categoria 1",
+=======
+	 "titulo": "Categoria 2",
+	 "desccorta": "Descripción corta de Categoria 2",
+	 "desclarga": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
+>>>>>>> bd1b27c6eb73bad3a5c0631121a8d3f04287cb0e
 	 "activo":false
 	},
 	{
 	 "id": "3",
+<<<<<<< HEAD
 	 "nombre": "Categoria 3",
 	 "ruta_foto": "Descripción corta de Categoria 1",
+=======
+	 "titulo": "Categoria 3",
+	 "desccorta": "Descripción corta de Categoria 3",
+	 "desclarga": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+>>>>>>> bd1b27c6eb73bad3a5c0631121a8d3f04287cb0e
 	 "activo":false
 	},
 	{
